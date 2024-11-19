@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1d87badf2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-menu">
+        <div class="logo">
+          <header>
+            <div class="logo">
+              <a href="./dashboard.html">HealthConnects</a>
+            </div>
+          </header>
+          <nav>
+            <button><a href="./dashboard.html">Admin Dashboard</a></button>
+            <!-- <button>
+              <a href="./dashboard-doctors.html">Doctors Dashboard</a>
+            </button>
+            <button>
+              <a href="./dashboard-patient.html">Patient Dashboard</a>
+            </button>
+            <button><a href="./book.html">Book Apointment</a></button>
+            <button><a href="./facilities.html">Nearby Facilities</a></button>
+            <button><a href="./referral.html">Get Referred</a></button>
+            <button><a href="./symptoms.html">Check Symptoms</a></button> -->
+            <button><a href="./doctors.html">Doctors</a></button>
+            <button><a href="./nurses.html">Nurses</a></button>
+            <button><a href="./inpatients.html">Indoor Patients</a></button>
+            <button><a href="./outpatients.html">Outdoor Patients</a></button>
+            <button><a href="./appointments.html">Appointments</a></button>
+            <button><a href="./index.html">Logout</a></button>
+          </nav>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="page-title">
+          <h1>Appointments</h1>
+          <p>Welcome Back | Jumoke Aliyu Chigozie</p>
+        </div>
+        <div class="dashboard-content-main">
+          <main>
+            <section class="appointments-list">
+              <h2>Scheduled Appointments</h2>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Patient Name</th>
+                    <th>Doctor Assigned</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jane Doe</td>
+                    <td>Dr. Smith</td>
+                    <td>2024-11-20</td>
+                    <td>9:00 AM</td>
+                    <td>Confirmed</td>
+                    <td><button onclick="viewDetails('1')">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>John Appleseed</td>
+                    <td>Dr. Johnson</td>
+                    <td>2024-11-20</td>
+                    <td>10:00 AM</td>
+                    <td>Pending</td>
+                    <td><button onclick="viewDetails('2')">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>Mary Jane</td>
+                    <td>Dr. Wilson</td>
+                    <td>2024-11-21</td>
+                    <td>11:00 AM</td>
+                    <td>Confirmed</td>
+                    <td><button onclick="viewDetails('3')">View</button></td>
+                  </tr>
+                  <!-- More appointments can go here -->
+                </tbody>
+              </table>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to view more details about an appointment
+      function viewDetails(appointmentId) {
+        alert("View details for appointment ID: " + appointmentId);
+        // You can redirect to another page or open a modal with appointment details
+      }
+    </script>
+  </body>
+</html>

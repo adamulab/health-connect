@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1d87badf2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-menu">
+        <div class="logo">
+          <header>
+            <div class="logo">
+              <a href="./dashboard.html">HealthConnects</a>
+            </div>
+          </header>
+          <nav>
+            <!-- <button><a href="./dashboard.html">Admin Dashboard</a></button>
+            <button>
+              <a href="./dashboard-doctors.html">Doctors Dashboard</a>
+            </button> -->
+            <button>
+              <a href="./dashboard-patient.html">Patient Dashboard</a>
+            </button>
+            <button><a href="./book.html">Book Apointment</a></button>
+            <button><a href="./facilities.html">Nearby Facilities</a></button>
+            <button><a href="./referral.html">Get Referred</a></button>
+            <button><a href="./symptoms.html">Check Symptoms</a></button>
+            <!-- <button><a href="./doctors.html">Doctors</a></button>
+            <button><a href="./nurses.html">Nurses</a></button>
+            <button><a href="./inpatients.html">Indoor Patients</a></button>
+            <button><a href="./outpatients.html">Outdoor Patients</a></button>
+            <button><a href="./appointments.html">Appointments</a></button> -->
+            <button><a href="./index.html">Logout</a></button>
+          </nav>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="page-title">
+          <h1>Book Appointment - Patients Details</h1>
+          <p>Welcome Back | Jumoke Aliyu Chigozie</p>
+        </div>
+        <div class="dashboard-content-form">
+          <div class="form">
+            <div class="item">
+              <label for="name">Fullname</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="item">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="item">
+              <label for="phone">Phone</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+            <div class="item">
+              <label for="name">Contact</label>
+              <div class="radio-items">
+                <div>
+                  <input type="radio" name="contact" id="contact" /> Via Email
+                </div>
+                <div>
+                  <input type="radio" name="contact" id="contact" /> Via Phone
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <label for="department">Department</label>
+              <input type="text" name="department" id="department" />
+            </div>
+            <div class="item">
+              <label for="describe">Describe Symptoms</label>
+              <textarea name="describe" id="describe" rows="5"></textarea>
+            </div>
+            <div class="item">
+              <button>Book Appointment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

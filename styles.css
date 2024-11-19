@@ -1,0 +1,708 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", serif;
+  background: linear-gradient(to top left, #333, #4caf50);
+}
+td a {
+  color: #45a049;
+}
+a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: white;
+}
+button {
+  cursor: pointer;
+}
+header {
+  padding: 20px;
+  color: white;
+}
+.logo {
+  font-family: "Satisfy", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.landing {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+}
+
+.landing-left {
+  background-color: white;
+  flex: 1;
+  /* order: 2; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.landing-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.landing-image {
+  /* border: 2px solid white; */
+  border-radius: 20px;
+  width: 80%;
+  object-fit: contain;
+}
+.landing-info {
+  background-color: #4caf50;
+  color: white;
+  position: absolute;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40%;
+}
+.landing-info h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.landing-info p {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.landing-right .auth-form {
+  width: 400px;
+  background-color: white;
+  color: #333;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.landing-right .auth-form input {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  border-bottom: 1px solid #4caf50;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.landing-right .auth-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.landing-right-container p {
+  color: white;
+}
+.dashboard {
+  display: flex;
+  height: 100vh;
+  gap: 20px;
+}
+.dashboard-menu {
+  flex: 1;
+}
+.dashboard-menu .logo {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+/* nav {
+  padding-top: 20px;
+} */
+nav button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  background-color: bisque;
+  color: #4caf50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  transition: all 300ms ease-in-out;
+}
+nav button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+nav button:hover {
+  background: #45a049;
+  border: 1px solid bisque;
+}
+.dashboard-content {
+  flex: 4;
+  background-color: bisque;
+  border-radius: 20px;
+  padding: 30px;
+  overflow-y: auto;
+  margin: 20px;
+}
+.dashboard-content-single {
+  text-align: center;
+}
+.dashboard-content-single .profile-bio h3 {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin-top: 50px;
+}
+.page-title {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-title p {
+  color: gray;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  padding: 20px;
+  background-color: white;
+  color: #333;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.card .detail h3 {
+  text-transform: uppercase;
+  color: gray;
+  text-align: left;
+}
+.card .detail i {
+  font-size: 80px;
+  color: #333;
+  border-radius: 50%;
+  border-right: 2px solid #45a049;
+  border-bottom: 2px solid #45a049;
+  padding: 20px;
+}
+.card .count {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  gap: 10px;
+  text-align: right;
+}
+.card .count p {
+  color: gray;
+  font-weight: bold;
+}
+.card .count h2 {
+  color: #45a049;
+  font-size: 50px;
+}
+.bookcard {
+  background-color: white;
+  color: #333;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  text-align: center;
+  height: 200px;
+  position: relative;
+}
+.bookcard img {
+  margin-top: 10px;
+  width: 100px;
+}
+.bookcard a {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-radius: 0px 0px 10px 10px;
+}
+.dashboard-content-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-content-form .form {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.dashboard-content-form .form label {
+  display: block;
+  margin: 20px 0px 10px;
+  font-size: 12px;
+  color: gray;
+}
+.dashboard-content-form .form input[type="text"],
+.dashboard-content-form .form textarea {
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  background-color: bisque;
+  border-radius: 10px;
+}
+.dashboard-content-form .form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  bottom: 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+.radio-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Hospital finder */
+.dashboard-content-finder .search-container {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.dashboard-content-finder #hospital-search-form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.dashboard-content-finder #location {
+  width: 60%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.dashboard-content-finder button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dashboard-content-finder button:hover {
+  background-color: #45a049;
+}
+.dashboard-content-finder .filters {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.dashboard-content-finder label {
+  margin-right: 1em;
+  font-size: 1em;
+}
+.dashboard-content-finder .results {
+  margin-top: 2em;
+}
+.dashboard-content-finder .results h2 {
+  text-align: center;
+}
+.dashboard-content-finder #hospital-results {
+  list-style: none;
+  padding: 0;
+}
+.dashboard-content-finder #hospital-results li {
+  background: #f9f9f9;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Referral */
+.dashboard-content-referral main {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.dashboard-content-referral form {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-content-referral fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.dashboard-content-referral legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+.dashboard-content-referral label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+.dashboard-content-referral input,
+.dashboard-content-referral select,
+.dashboard-content-referral textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.dashboard-content-referral textarea {
+  resize: vertical;
+}
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.7em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+button:hover {
+  background: #45a049;
+}
+/* Symptoms */
+.dashboard-content-symptoms main {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 1em;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+p {
+  color: #333;
+  text-align: center;
+}
+
+.dashboard-content-symptoms fieldset {
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+.dashboard-content-symptoms legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.dashboard-content-symptoms label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.dashboard-content-symptoms input[type="checkbox"],
+.dashboard-content-symptoms input[type="date"],
+.dashboard-content-symptoms select,
+.dashboard-content-symptoms textarea {
+  margin-top: 0.5em;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dashboard-content-symptoms textarea {
+  resize: vertical;
+}
+
+/* Doctors page */
+main {
+  max-width: 1000px;
+  margin: 2em auto;
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+}
+
+thead {
+  background: #4caf50;
+  color: white;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 1em;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background: #f4f4f4;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+/* Single doctor */
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.profile-header h2 {
+  color: #4caf50;
+  margin: 0;
+}
+
+.profile-header p {
+  font-size: 1.2em;
+  margin: 0.5em 0 0;
+}
+
+.profile-details p {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+.profile-details a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.profile-details a:hover {
+  text-decoration: underline;
+}
+
+.profile-bio h3 {
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.profile-bio p {
+  line-height: 1.8;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+
+/* Patients */
+main {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-record {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.profile-header h2 {
+  color: #4caf50;
+  margin: 0;
+}
+
+.profile-header p {
+  font-size: 1.2em;
+  margin: 0.5em 0 0;
+}
+
+.profile-details p {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+.profile-details a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.profile-details a:hover {
+  text-decoration: underline;
+}
+
+.update-form {
+  display: none;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.update-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.update-form input,
+.update-form select,
+.update-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.update-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-form button[type="button"] {
+  background-color: #f44336;
+}
+
+.update-form button:hover {
+  background-color: #45a049;
+}
+
+/* Appointments */
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+h2 {
+  color: #4caf50;
+  margin-bottom: 1em;
+}
+
+/* Patient dashboard */
+.dashboard-patient {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.patient-info,
+.appointments,
+.medical-records,
+.health-tips {
+  background: #f9f9f9;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #4caf50;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+/* Dashboard Doctor */
+.dashboard-doctor {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+section h2 {
+  color: #4caf50;
+  margin-bottom: 1em;
+}
+
+section {
+  background-color: #f9f9f9;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul li a:hover {
+  color: #4caf50;
+}

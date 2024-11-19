@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1d87badf2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-menu">
+        <div class="logo">
+          <header>
+            <div class="logo">
+              <a href="./dashboard.html">HealthConnects</a>
+            </div>
+          </header>
+          <nav>
+            <!-- <button><a href="./dashboard.html">Admin Dashboard</a></button> -->
+            <!-- <button>
+              <a href="./dashboard-doctors.html">Doctors Dashboard</a>
+            </button> -->
+            <button>
+              <a href="./dashboard-patient.html">Patient Dashboard</a>
+            </button>
+            <!-- <button><a href="./book.html">Book Apointment</a></button>
+            <button><a href="./facilities.html">Nearby Facilities</a></button>
+            <button><a href="./referral.html">Get Referred</a></button>
+            <button><a href="./symptoms.html">Check Symptoms</a></button> -->
+            <button><a href="./doctors.html">Doctors</a></button>
+            <button><a href="./nurses.html">Nurses</a></button>
+            <button><a href="./inpatients.html">Indoor Patients</a></button>
+            <button><a href="./outpatients.html">Outdoor Patients</a></button>
+            <!-- <button><a href="./appointments.html">Appointments</a></button> -->
+            <button><a href="./index.html">Logout</a></button>
+          </nav>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="page-title">
+          <h1>Patient | John Doe</h1>
+          <p>Welcome Back | John Doe</p>
+        </div>
+        <div class="dashboard-content-single">
+          <section class="patient-record">
+            <div class="profile-header">
+              <h2>Patient: John Doe</h2>
+              <p><strong>Patient ID:</strong> P001</p>
+            </div>
+
+            <div class="profile-details">
+              <p><strong>Age:</strong> 45</p>
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Contact:</strong> +234 901 234 5678</p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:johndoe@example.com">johndoe@example.com</a>
+              </p>
+              <p><strong>Address:</strong> 123 Main St, Lagos</p>
+              <p><strong>Medical History:</strong> Hypertension, Asthma</p>
+              <p><strong>Current Medications:</strong> Lisinopril, Albuterol</p>
+            </div>
+
+            <button onclick="openUpdateForm()">Update Record</button>
+
+            <!-- Update Form - Hidden by default -->
+            <div class="update-form" id="updateForm">
+              <h3>Update Patient Record</h3>
+              <form id="patientForm">
+                <label for="patientName">Patient Name:</label>
+                <input
+                  type="text"
+                  id="patientName"
+                  name="patientName"
+                  value="John Doe"
+                />
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" value="45" />
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                  <option value="Male" selected>Male</option>
+                  <option value="Female">Female</option>
+                </select>
+
+                <label for="contact">Contact Number:</label>
+                <input
+                  type="tel"
+                  id="contact"
+                  name="contact"
+                  value="+234 901 234 5678"
+                />
+
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="johndoe@example.com"
+                />
+
+                <label for="address">Address:</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  value="123 Main St, Lagos"
+                />
+
+                <label for="medicalHistory">Medical History:</label>
+                <textarea id="medicalHistory" name="medicalHistory">
+Hypertension, Asthma</textarea
+                >
+
+                <label for="medications">Current Medications:</label>
+                <textarea id="medications" name="medications">
+Lisinopril, Albuterol</textarea
+                >
+
+                <button type="submit">Save Changes</button>
+                <button type="button" onclick="closeUpdateForm()">
+                  Cancel
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to open the update form
+      function openUpdateForm() {
+        document.getElementById("updateForm").style.display = "block";
+      }
+
+      // Function to close the update form
+      function closeUpdateForm() {
+        document.getElementById("updateForm").style.display = "none";
+      }
+
+      // Handle form submission (you can integrate this with backend logic to save updates)
+      document
+        .getElementById("patientForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          // Logic for saving updates, e.g., sending data to server
+          alert("Patient record updated successfully!");
+          closeUpdateForm();
+        });
+    </script>
+  </body>
+</html>

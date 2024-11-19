@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1d87badf2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-menu">
+        <div class="logo">
+          <header>
+            <div class="logo">
+              <a href="./dashboard.html">HealthConnects</a>
+            </div>
+          </header>
+          <nav>
+            <!-- <button><a href="./dashboard.html">Admin Dashboard</a></button> -->
+            <!-- <button>
+              <a href="./dashboard-doctors.html">Doctors Dashboard</a>
+            </button> -->
+            <button>
+              <a href="./dashboard-patient.html">Patient Dashboard</a>
+            </button>
+            <button><a href="./book.html">Book Apointment</a></button>
+            <button><a href="./facilities.html">Nearby Facilities</a></button>
+            <button><a href="./referral.html">Get Referred</a></button>
+            <button><a href="./symptoms.html">Check Symptoms</a></button>
+            <!-- <button><a href="./doctors.html">Doctors</a></button>
+            <button><a href="./nurses.html">Nurses</a></button>
+            <button><a href="./inpatients.html">Indoor Patients</a></button>
+            <button><a href="./outpatients.html">Outdoor Patients</a></button>
+            <button><a href="./appointments.html">Appointments</a></button> -->
+            <button><a href="./index.html">Logout</a></button>
+          </nav>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="page-title">
+          <h1>Hospital Referral</h1>
+          <p>Welcome Back | Jumoke Aliyu Chigozie</p>
+        </div>
+        <div class="dashboard-content-referral">
+          <section class="form-container">
+            <form id="referral-form">
+              <!-- Patient Information -->
+              <fieldset>
+                <legend>Patient Information</legend>
+                <label for="patient-name">Full Name:</label>
+                <input
+                  type="text"
+                  id="patient-name"
+                  name="patient-name"
+                  placeholder="Enter patient's full name"
+                  required
+                />
+
+                <label for="patient-age">Age:</label>
+                <input
+                  type="number"
+                  id="patient-age"
+                  name="patient-age"
+                  placeholder="Enter patient's age"
+                  required
+                />
+
+                <label for="patient-gender">Gender:</label>
+                <select id="patient-gender" name="patient-gender" required>
+                  <option value="" disabled selected>Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+
+                <label for="patient-contact">Contact Number:</label>
+                <input
+                  type="tel"
+                  id="patient-contact"
+                  name="patient-contact"
+                  placeholder="Enter contact number"
+                  required
+                />
+              </fieldset>
+
+              <!-- Referral Details -->
+              <fieldset>
+                <legend>Referral Details</legend>
+                <label for="current-hospital">Current Hospital:</label>
+                <input
+                  type="text"
+                  id="current-hospital"
+                  name="current-hospital"
+                  placeholder="Enter current hospital's name"
+                  required
+                />
+
+                <label for="receiving-hospital">Receiving Hospital:</label>
+                <input
+                  type="text"
+                  id="receiving-hospital"
+                  name="receiving-hospital"
+                  placeholder="Enter receiving hospital's name"
+                  required
+                />
+
+                <label for="reason">Reason for Referral:</label>
+                <textarea
+                  id="reason"
+                  name="reason"
+                  placeholder="Describe the reason for referral"
+                  rows="4"
+                  required
+                ></textarea>
+              </fieldset>
+
+              <!-- Medical Information -->
+              <fieldset>
+                <legend>Medical Information</legend>
+                <label for="diagnosis">Diagnosis:</label>
+                <textarea
+                  id="diagnosis"
+                  name="diagnosis"
+                  placeholder="Enter diagnosis details"
+                  rows="3"
+                  required
+                ></textarea>
+
+                <label for="medications">Current Medications:</label>
+                <textarea
+                  id="medications"
+                  name="medications"
+                  placeholder="List medications patient is currently on"
+                  rows="3"
+                ></textarea>
+
+                <label for="additional-info">Additional Information:</label>
+                <textarea
+                  id="additional-info"
+                  name="additional-info"
+                  placeholder="Provide any other relevant information"
+                  rows="3"
+                ></textarea>
+              </fieldset>
+
+              <!-- Submit Button -->
+              <div class="form-actions">
+                <button type="submit">Submit Referral</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

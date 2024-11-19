@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1d87badf2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-menu">
+        <div class="logo">
+          <header>
+            <div class="logo">
+              <a href="./dashboard.html">HealthConnects</a>
+            </div>
+          </header>
+          <nav>
+            <button><a href="./dashboard.html">Admin Dashboard</a></button>
+            <!-- <button>
+              <a href="./dashboard-doctors.html">Doctors Dashboard</a>
+            </button>
+            <button>
+              <a href="./dashboard-patient.html">Patient Dashboard</a>
+            </button>
+            <button><a href="./book.html">Book Apointment</a></button>
+            <button><a href="./facilities.html">Nearby Facilities</a></button>
+            <button><a href="./referral.html">Get Referred</a></button>
+            <button><a href="./symptoms.html">Check Symptoms</a></button> -->
+            <button><a href="./doctors.html">Doctors</a></button>
+            <button><a href="./nurses.html">Nurses</a></button>
+            <button><a href="./inpatients.html">Indoor Patients</a></button>
+            <button><a href="./outpatients.html">Outdoor Patients</a></button>
+            <button><a href="./appointments.html">Appointments</a></button>
+            <button><a href="./index.html">Logout</a></button>
+          </nav>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="page-title">
+          <h1>In-Patients</h1>
+          <p>Welcome Back | Jumoke Aliyu Chigozie</p>
+        </div>
+        <div class="dashboard-content-main">
+          <main>
+            <section class="inpatients-list-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID Number</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Ward/Room Number</th>
+                    <th>Admitted Date</th>
+                    <th>Diagnosis</th>
+                    <th>Attending Doctor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td><a href="./patient.html">John Doe</a></td>
+                    <td>45</td>
+                    <td>Male</td>
+                    <td>Ward 1, Room 101</td>
+                    <td>2024-11-10</td>
+                    <td>Hypertension</td>
+                    <td>Dr. Jane Smith</td>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>Mary Johnson</td>
+                    <td>32</td>
+                    <td>Female</td>
+                    <td>Ward 3, Room 205</td>
+                    <td>2024-11-09</td>
+                    <td>Diabetes</td>
+                    <td>Dr. Ahmed Yusuf</td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>Aliyu Ibrahim</td>
+                    <td>50</td>
+                    <td>Male</td>
+                    <td>Ward 2, Room 202</td>
+                    <td>2024-11-11</td>
+                    <td>Kidney Stones</td>
+                    <td>Dr. Chike Okafor</td>
+                  </tr>
+                  <tr>
+                    <td>004</td>
+                    <td>Aisha Bello</td>
+                    <td>25</td>
+                    <td>Female</td>
+                    <td>Ward 4, Room 310</td>
+                    <td>2024-11-08</td>
+                    <td>Asthma</td>
+                    <td>Dr. Maria Gonzalez</td>
+                  </tr>
+                  <tr>
+                    <td>005</td>
+                    <td>Paul Oke</td>
+                    <td>40</td>
+                    <td>Male</td>
+                    <td>Ward 5, Room 415</td>
+                    <td>2024-11-07</td>
+                    <td>Fracture</td>
+                    <td>Dr. Aisha Bello</td>
+                  </tr>
+                  <tr>
+                    <td>006</td>
+                    <td>Fatima Abdullahi</td>
+                    <td>18</td>
+                    <td>Female</td>
+                    <td>Ward 6, Room 501</td>
+                    <td>2024-11-11</td>
+                    <td>Anemia</td>
+                    <td>Dr. James Okoro</td>
+                  </tr>
+                  <tr>
+                    <td>007</td>
+                    <td>Samuel Ade</td>
+                    <td>65</td>
+                    <td>Male</td>
+                    <td>Ward 7, Room 402</td>
+                    <td>2024-11-12</td>
+                    <td>Arthritis</td>
+                    <td>Dr. Jane Smith</td>
+                  </tr>
+                  <tr>
+                    <td>008</td>
+                    <td>Esther Nwachukwu</td>
+                    <td>29</td>
+                    <td>Female</td>
+                    <td>Ward 8, Room 303</td>
+                    <td>2024-11-06</td>
+                    <td>Pneumonia</td>
+                    <td>Dr. Ahmed Yusuf</td>
+                  </tr>
+                  <tr>
+                    <td>009</td>
+                    <td>Victor Eze</td>
+                    <td>34</td>
+                    <td>Male</td>
+                    <td>Ward 9, Room 207</td>
+                    <td>2024-11-09</td>
+                    <td>Ulcer</td>
+                    <td>Dr. Chike Okafor</td>
+                  </tr>
+                  <tr>
+                    <td>010</td>
+                    <td>Grace Johnson</td>
+                    <td>55</td>
+                    <td>Female</td>
+                    <td>Ward 1, Room 103</td>
+                    <td>2024-11-12</td>
+                    <td>Hypertension</td>
+                    <td>Dr. Maria Gonzalez</td>
+                  </tr>
+                  <!-- Add more patients here -->
+                </tbody>
+              </table>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
