@@ -224,7 +224,7 @@ nav button:hover {
 }
 .card .count h2 {
   color: #1523dd;
-  font-size: 50px;
+  font-size: 40px;
 }
 .bookcard {
   background-color: white;
@@ -718,4 +718,24 @@ ul li a:hover {
 .hosp-result li {
   display: flex;
   justify-content: space-between;
+}
+
+.in-twos {
+  display: flex;
+  gap: 30px;
+}
+
+.in-twos .input-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.patient-image {
+  text-align: center;
+}
+
+.patient-image img {
+  width: 300px;
+  height: auto;
 }

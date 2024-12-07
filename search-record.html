@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1d87badf2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-menu">
+        <div class="logo">
+          <header>
+            <div class="logo">
+              <a href="./dashboard.html">HealthConnects</a>
+            </div>
+          </header>
+          <nav>
+            <button><a href="./dashboard.html">Dashboard</a></button>
+            <button>
+              <a href="#">Patient Registration</a>
+            </button>
+            <button>
+              <a href="#">Patients Records</a>
+            </button>
+            <button><a href="#">Appointments</a></button>
+            <button><a href="#">Admissions</a></button>
+            <button><a href="#">Laboratory/Test</a></button>
+            <button><a href="#">Prescription</a></button>
+            <button><a href="#">Billing and Payment</a></button>
+            <button><a href="#">Referrals</a></button>
+            <button><a href="#">Reports</a></button>
+            <button><a href="#">Notification</a></button>
+            <button><a href="#">Settings</a></button>
+            <button><a href="#">Support</a></button>
+            <button><a href="./index.html">Logout</a></button>
+          </nav>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="page-title">
+          <h1>Record Manager Dashboard</h1>
+          <p>Welcome Back | Yusuf DanTsoho Memorial Hospital</p>
+        </div>
+        <div class="dashboard-content-finder">
+          <section class="search-container">
+            <h2>Search Record with Patient ID/Request ID</h2>
+            <form id="hospital-search-form">
+              <input
+                type="text"
+                id="location"
+                placeholder="Enter your location"
+                required
+              />
+              <button type="submit">Search Record</button>
+            </form>
+            <br />
+          </section>
+
+          <!-- Results Section -->
+          <section class="results">
+            <h2>Search Results</h2>
+            <div id="patient">
+              <table>
+                <thead>
+                  <tr>
+                    <td>S/N</td>
+                    <td>Request ID</td>
+                    <td>Patient ID</td>
+                    <td>Patient Name</td>
+                    <td>Status</td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>YDMH0267</td>
+                    <td>PR91982</td>
+                    <td>Maimuna Ahmad</td>
+                    <td>OPEN</td>
+                    <td><button>View</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul id="hospital-results">
+              <!-- List of hospitals will be dynamically added here -->
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
