@@ -26,22 +26,14 @@
             </div>
           </header>
           <nav>
-            <!-- <button><a href="./dashboard.html">Admin Dashboard</a></button> -->
-            <!-- <button>
-              <a href="./dashboard-doctors.html">Doctors Dashboard</a>
-            </button> -->
             <button>
-              <a href="./dashboard-patient.html">Patient Dashboard</a>
+              <a href="./dashboard-patient.html">Dashboard</a>
             </button>
-            <button><a href="./book.html">Book Apointment</a></button>
+            <button><a href="./book.html">Appointments</a></button>
             <button><a href="./facilities.html">Nearby Facilities</a></button>
-            <button><a href="./referral.html">Get Referred</a></button>
-            <button><a href="./symptoms.html">Check Symptoms</a></button>
-            <!-- <button><a href="./doctors.html">Doctors</a></button>
-            <button><a href="./nurses.html">Nurses</a></button>
-            <button><a href="./inpatients.html">Indoor Patients</a></button>
-            <button><a href="./outpatients.html">Outdoor Patients</a></button>
-            <button><a href="./appointments.html">Appointments</a></button> -->
+            <button><a href="./referral.html">Referrals</a></button>
+            <button><a href="#">Profile</a></button>
+            <button><a href="#">Support</a></button>
             <button><a href="./index.html">Logout</a></button>
           </nav>
         </div>
@@ -63,6 +55,8 @@
               />
               <button type="submit">Search</button>
             </form>
+            <br />
+            <button id="findFacilities">Find Nearby Facilities</button>
           </section>
 
           <!-- Filters Section -->
@@ -85,6 +79,7 @@
           <!-- Results Section -->
           <section class="results">
             <h2>Search Results</h2>
+            <div id="facilities"></div>
             <ul id="hospital-results">
               <!-- List of hospitals will be dynamically added here -->
             </ul>
@@ -92,5 +87,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

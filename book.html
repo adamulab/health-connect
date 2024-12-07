@@ -26,79 +26,75 @@
             </div>
           </header>
           <nav>
-            <!-- <button><a href="./dashboard.html">Admin Dashboard</a></button>
             <button>
-              <a href="./dashboard-doctors.html">Doctors Dashboard</a>
-            </button> -->
-            <button>
-              <a href="./dashboard-patient.html">Patient Dashboard</a>
+              <a href="./dashboard-patient.html">Dashboard</a>
             </button>
-            <button><a href="./book.html">Book Apointment</a></button>
+            <button><a href="./book.html">Appointments</a></button>
             <button><a href="./facilities.html">Nearby Facilities</a></button>
-            <button><a href="./referral.html">Get Referred</a></button>
-            <button><a href="./symptoms.html">Check Symptoms</a></button>
-            <!-- <button><a href="./doctors.html">Doctors</a></button>
-            <button><a href="./nurses.html">Nurses</a></button>
-            <button><a href="./inpatients.html">Indoor Patients</a></button>
-            <button><a href="./outpatients.html">Outdoor Patients</a></button>
-            <button><a href="./appointments.html">Appointments</a></button> -->
+            <button><a href="./referral.html">Referrals</a></button>
+            <button><a href="#">Profile</a></button>
+            <button><a href="#">Support</a></button>
             <button><a href="./index.html">Logout</a></button>
           </nav>
         </div>
       </div>
       <div class="dashboard-content">
         <div class="page-title">
-          <h1>Book Appointment - Choose Doctor</h1>
+          <h1>Find Facility</h1>
           <p>Welcome Back | Jumoke Aliyu Chigozie</p>
         </div>
-        <div class="cards">
-          <div class="bookcard">
-            <img src="./images/cardiologist.png" alt="cardiologist" />
-            <h2>Cardiologist</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/physician.png" alt="physician" />
-            <h2>Family Physician</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/dentist.png" alt="dentist" />
-            <h2>Dentist</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/dermatologist.png" alt="dermatologist" />
-            <h2>Dermatologist</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/orthopaedic.png" alt="orthopedic" />
-            <h2>Orthopedic</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/neurologist.png" alt="neurologist" />
-            <h2>Neurologist</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/pediatrician.png" alt="pediatrician" />
-            <h2>Pediatrician</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/gastroentrologist.png" alt="gastroentrologist" />
-            <h2>Gastroentrologist</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
-          <div class="bookcard">
-            <img src="./images/physician.jpg" alt="hermatologist" />
-            <h2>Hermatologist</h2>
-            <a href="./book-one.html">Book</a>
-          </div>
+        <div class="dashboard-content-finder">
+          <section class="search-container">
+            <h2>Search for Hospitals in Your Area</h2>
+            <form id="hospital-search-form">
+              <input
+                type="text"
+                id="location"
+                placeholder="Enter your location"
+                required
+              />
+              <button type="submit">Search</button>
+            </form>
+            <br />
+            <button id="findFacilities">Find Nearby Facilities</button>
+          </section>
+
+          <!-- Filters Section -->
+          <section class="filters">
+            <h3>Filter Results</h3>
+            <label>
+              <input type="checkbox" id="open-now" />
+              Open Now
+            </label>
+            <label>
+              <input type="checkbox" id="emergency" />
+              Emergency Services
+            </label>
+            <label>
+              <input type="checkbox" id="pharmacy" />
+              On-Site Pharmacy
+            </label>
+          </section>
+
+          <!-- Results Section -->
+          <section class="results">
+            <h2>Search Results</h2>
+            <div id="facilities"></div>
+            <ul id="hospital-results" class="hosp-result">
+              <!-- List of hospitals will be dynamically added here -->
+              <li>
+                Barau Dikko Specialist Hospital -
+                <button><a href="./book-one.html">Select</a></button>
+              </li>
+              <li>
+                Garkuwa Specialist Hospital -
+                <button><a href="./book-one.html">Select</a></button>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

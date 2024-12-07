@@ -5,10 +5,10 @@
 }
 body {
   font-family: "Nunito Sans", serif;
-  background: linear-gradient(to top left, #333, #4caf50);
+  background: linear-gradient(to top left, #333, #1523dd);
 }
 td a {
-  color: #45a049;
+  color: #1523dd;
 }
 a {
   text-decoration: underline;
@@ -60,7 +60,7 @@ header {
   object-fit: contain;
 }
 .landing-info {
-  background-color: #4caf50;
+  background-color: #1523dd;
   color: white;
   position: absolute;
   padding: 20px;
@@ -70,13 +70,14 @@ header {
 }
 .landing-info h1 {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 .landing-info p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: capitalize;
+  color: lightgray;
 }
 .landing-right .auth-form {
   width: 400px;
@@ -88,18 +89,22 @@ header {
   margin-bottom: 20px;
 }
 
+.landing-right .logo {
+  font-size: 40px;
+}
+
 .landing-right .auth-form input {
   width: 100%;
   padding: 15px 5px;
   border: none;
-  border-bottom: 1px solid #4caf50;
+  border-bottom: 1px solid #1523dd;
   outline: none;
   margin-bottom: 20px;
   font-size: 18px;
 }
 
 .landing-right .auth-form button {
-  background-color: #4caf50;
+  background-color: #1523dd;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -130,8 +135,8 @@ nav button {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
-  background-color: bisque;
-  color: #4caf50;
+  background-color: #f5f3f2;
+  color: #1523dd;
   padding: 10px 20px;
   border: none;
   border-radius: 0px 20px 20px 0px;
@@ -144,11 +149,11 @@ nav button a {
 }
 nav button:hover {
   background: #45a049;
-  border: 1px solid bisque;
+  border: 1px solid #f5f3f2;
 }
 .dashboard-content {
   flex: 4;
-  background-color: bisque;
+  background-color: #f5f3f2;
   border-radius: 20px;
   padding: 30px;
   overflow-y: auto;
@@ -201,8 +206,8 @@ nav button:hover {
   font-size: 80px;
   color: #333;
   border-radius: 50%;
-  border-right: 2px solid #45a049;
-  border-bottom: 2px solid #45a049;
+  border-right: 2px solid #1523dd;
+  border-bottom: 2px solid #1523dd;
   padding: 20px;
 }
 .card .count {
@@ -218,7 +223,7 @@ nav button:hover {
   font-weight: bold;
 }
 .card .count h2 {
-  color: #45a049;
+  color: #1523dd;
   font-size: 50px;
 }
 .bookcard {
@@ -235,7 +240,7 @@ nav button:hover {
   width: 100px;
 }
 .bookcard a {
-  background-color: #4caf50;
+  background-color: #1523dd;
   color: white;
   padding: 10px 20px;
   display: block;
@@ -267,7 +272,7 @@ nav button:hover {
   padding: 10px 20px;
   width: 100%;
   border: none;
-  background-color: bisque;
+  background-color: #f5f3f2;
   border-radius: 10px;
 }
 .dashboard-content-form .form button {
@@ -305,13 +310,13 @@ nav button:hover {
 .dashboard-content-finder button {
   padding: 0.5em 1em;
   border: none;
-  background-color: #4caf50;
+  background-color: #1523dd;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 .dashboard-content-finder button:hover {
-  background-color: #45a049;
+  background-color: #1523dd;
 }
 .dashboard-content-finder .filters {
   margin-bottom: 2em;
@@ -380,7 +385,7 @@ nav button:hover {
   resize: vertical;
 }
 button {
-  background: #4caf50;
+  background: #1523dd;
   color: white;
   border: none;
   padding: 0.7em 1.5em;
@@ -389,7 +394,7 @@ button {
   font-size: 1em;
 }
 button:hover {
-  background: #45a049;
+  background: #1523dd;
 }
 /* Symptoms */
 .dashboard-content-symptoms main {
@@ -457,7 +462,7 @@ table {
 }
 
 thead {
-  background: #4caf50;
+  background: #1523dd;
   color: white;
 }
 
@@ -493,7 +498,7 @@ main {
 }
 
 .profile-header h2 {
-  color: #4caf50;
+  color: #1523dd;
   margin: 0;
 }
 
@@ -508,7 +513,7 @@ main {
 }
 
 .profile-details a {
-  color: #4caf50;
+  color: #1523dd;
   text-decoration: none;
 }
 
@@ -550,7 +555,7 @@ main {
 }
 
 .profile-header h2 {
-  color: #4caf50;
+  color: #1523dd;
   margin: 0;
 }
 
@@ -565,7 +570,7 @@ main {
 }
 
 .profile-details a {
-  color: #4caf50;
+  color: #1523dd;
   text-decoration: none;
 }
 
@@ -599,7 +604,7 @@ main {
 }
 
 .update-form button {
-  background-color: #4caf50;
+  background-color: #1523dd;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -612,7 +617,7 @@ main {
 }
 
 .update-form button:hover {
-  background-color: #45a049;
+  background-color: #1523dd;
 }
 
 /* Appointments */
@@ -623,7 +628,7 @@ main {
 }
 
 h2 {
-  color: #4caf50;
+  color: #1523dd;
   margin-bottom: 1em;
 }
 
@@ -644,7 +649,7 @@ h2 {
 }
 
 h3 {
-  color: #4caf50;
+  color: #1523dd;
   margin-bottom: 1em;
 }
 
@@ -665,7 +670,7 @@ ul li {
 }
 
 section h2 {
-  color: #4caf50;
+  color: #1523dd;
   margin-bottom: 1em;
 }
 
@@ -704,5 +709,13 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #4caf50;
+  color: #1523dd;
+}
+.hosp-result a {
+  color: white;
+}
+
+.hosp-result li {
+  display: flex;
+  justify-content: space-between;
 }
